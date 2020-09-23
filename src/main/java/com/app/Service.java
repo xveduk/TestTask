@@ -34,12 +34,11 @@ public class Service {
         return departure;
     }
 
-    public boolean isLongerThanHour() {
-        return arrival - departure > 60;
+    public int getArrival() {
+        return arrival;
     }
 
-    public boolean isBetterThan(Service other) {
-        if (this.departure == other.departure && this.arrival == other.arrival) return this.isPosh;
-        else return this.departure >= other.departure && this.arrival <= other.arrival;
+    public boolean isLongerThanHour() {
+        return arrival - departure > 60;
     }
 }
